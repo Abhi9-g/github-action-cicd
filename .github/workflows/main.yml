@@ -13,5 +13,5 @@ jobs:
           run: | 
             docker build -t myimage . 
             echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-            docker tag myimage username/myimage
-            docker push username/myimage
+            docker tag myimage abhi9d/myimage
+            docker push abhi9d/myimage
